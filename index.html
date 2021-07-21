@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Looper</title>
+  <link rel="stylesheet" type="text/css" href="css/magnifier.css">
+  <!-- or the reference on CDN -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container flex-container bgColor flex-column space-around position-relative">
+      <div class="slide-Menu-bar flex-container flex-column space-around bgColor ">
+        <div class="show-watches">
+          <img class="watchMenu img1" src="images/oyster/watchCollect.png" alt="">
+          <img class="watchMenu img2  " src="images/date/watchCollect2.png" alt="">
+          <img class="watchMenu img3  " src="images/date/watch3.png" alt="">
+        </div>
+        <div class="menu-bar">
+          <ul class="menu-link-container">
+            <li> <a class="menu-link" href="#">About</a> </li>
+            <li> <a class="menu-link" href="#">Watches</a> </li>
+            <li> <a class="menu-link" href="#">New Collections</a> </li>
+            <li> <a class="menu-link" href="#">locator</a> </li>
+          </ul>
+        </div>
+        <div class="social">
+          <svg width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M35.7143 0.5H4.28571C1.91964 0.5 0 2.17969 0 4.25V31.75C0 33.8203 1.91964 35.5 4.28571 35.5H35.7143C38.0804 35.5 40 33.8203 40 31.75V4.25C40 2.17969 38.0804 0.5 35.7143 0.5ZM31.3482 12.9062C31.3661 13.125 31.3661 13.3516 31.3661 13.5703C31.3661 20.3438 25.4732 28.1484 14.7054 28.1484C11.3839 28.1484 8.30357 27.3047 5.71429 25.8516C6.1875 25.8984 6.64286 25.9141 7.125 25.9141C9.86607 25.9141 12.3839 25.1016 14.3929 23.7266C11.8214 23.6797 9.66072 22.2031 8.91964 20.1719C9.82143 20.2891 10.6339 20.2891 11.5625 20.0781C8.88393 19.6016 6.875 17.5391 6.875 15.0469V14.9844C7.65179 15.3672 8.5625 15.6016 9.51786 15.6328C8.71467 15.1653 8.05623 14.5311 7.60131 13.7868C7.14639 13.0425 6.90914 12.2113 6.91071 11.3672C6.91071 10.4141 7.19643 9.53906 7.70536 8.78125C10.5893 11.8906 14.9196 13.9219 19.7768 14.1406C18.9464 10.6641 21.9196 7.84375 25.4911 7.84375C27.1786 7.84375 28.6964 8.46094 29.7679 9.46094C31.0893 9.24219 32.3571 8.8125 33.4821 8.22656C33.0446 9.41406 32.125 10.4141 30.9107 11.0469C32.0893 10.9375 33.2321 10.6484 34.2857 10.25C33.4911 11.2734 32.4911 12.1797 31.3482 12.9062Z"
+              fill="white" />
+          </svg>
+          <svg width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20.0088 9.01562C14.3302 9.01562 9.74986 13.0234 9.74986 17.9922C9.74986 22.9609 14.3302 26.9687 20.0088 26.9687C25.6874 26.9687 30.2677 22.9609 30.2677 17.9922C30.2677 13.0234 25.6874 9.01562 20.0088 9.01562ZM20.0088 23.8281C16.3391 23.8281 13.3391 21.2109 13.3391 17.9922C13.3391 14.7734 16.3302 12.1562 20.0088 12.1562C23.6874 12.1562 26.6784 14.7734 26.6784 17.9922C26.6784 21.2109 23.6784 23.8281 20.0088 23.8281ZM33.0802 8.64844C33.0802 9.8125 32.0088 10.7422 30.6874 10.7422C29.357 10.7422 28.2945 9.80469 28.2945 8.64844C28.2945 7.49219 29.3659 6.55469 30.6874 6.55469C32.0088 6.55469 33.0802 7.49219 33.0802 8.64844ZM39.8749 10.7734C39.7231 7.96875 38.9909 5.48438 36.6427 3.4375C34.3034 1.39062 31.4642 0.75 28.2588 0.609375C24.9552 0.445312 15.0534 0.445312 11.7499 0.609375C8.55343 0.742188 5.71415 1.38281 3.36593 3.42969C1.01772 5.47656 0.294503 7.96094 0.133789 10.7656C-0.0537109 13.6562 -0.0537109 22.3203 0.133789 25.2109C0.285575 28.0156 1.01772 30.5 3.36593 32.5469C5.71415 34.5938 8.54451 35.2344 11.7499 35.375C15.0534 35.5391 24.9552 35.5391 28.2588 35.375C31.4642 35.2422 34.3034 34.6016 36.6427 32.5469C38.982 30.5 39.7142 28.0156 39.8749 25.2109C40.0624 22.3203 40.0624 13.6641 39.8749 10.7734ZM35.607 28.3125C34.9106 29.8438 33.5624 31.0234 31.8034 31.6406C29.1695 32.5547 22.9195 32.3438 20.0088 32.3438C17.0981 32.3438 10.8391 32.5469 8.21415 31.6406C6.46415 31.0312 5.11593 29.8516 4.41058 28.3125C3.36593 26.0078 3.607 20.5391 3.607 17.9922C3.607 15.4453 3.37486 9.96875 4.41058 7.67188C5.107 6.14062 6.45522 4.96094 8.21415 4.34375C10.8481 3.42969 17.0981 3.64062 20.0088 3.64062C22.9195 3.64062 29.1784 3.4375 31.8034 4.34375C33.5534 4.95312 34.9017 6.13281 35.607 7.67188C36.6517 9.97656 36.4106 15.4453 36.4106 17.9922C36.4106 20.5391 36.6517 26.0156 35.607 28.3125Z"
+              fill="white" />
+          </svg>
+          <svg width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M35.7143 0.5H4.28571C3.14907 0.5 2.05898 0.895088 1.25526 1.59835C0.451529 2.30161 0 3.25544 0 4.25L0 31.75C0 32.7446 0.451529 33.6984 1.25526 34.4016C2.05898 35.1049 3.14907 35.5 4.28571 35.5H16.5402V23.6008H10.9152V18H16.5402V13.7312C16.5402 8.87578 19.8438 6.19375 24.9036 6.19375C27.3268 6.19375 29.8607 6.57188 29.8607 6.57188V11.3375H27.0688C24.3179 11.3375 23.4598 12.8312 23.4598 14.3633V18H29.6009L28.6188 23.6008H23.4598V35.5H35.7143C36.8509 35.5 37.941 35.1049 38.7447 34.4016C39.5485 33.6984 40 32.7446 40 31.75V4.25C40 3.25544 39.5485 2.30161 38.7447 1.59835C37.941 0.895088 36.8509 0.5 35.7143 0.5Z"
+              fill="white" />
+          </svg>
+
+
+        </div>
+
+      </div>
+      <div class="Category-slide backColor1">
+        <div class="category-container">
+
+          <div class="Category-group">
+            <div class="category-watch">
+              <span class="category-name">Oyster</span>
+              <img src="images/oyster/watchCollect.png" alt="">
+              <div class="block blockColor1">
+
+              </div>
+            </div>
+            <div class="category-watch">
+              <span class="category-name">Date</span>
+              <img src="images/date/watchCollect2.png" alt="">
+              <div class="block blockColor2">
+
+              </div>
+
+            </div>
+            <div class="category-watch">
+              <span class="category-name">Sky</span>
+              <img src="images/date/watch3.png" alt="">
+              <div class="block blockColor3">
+
+              </div>
+            </div>
+
+
+            <div class="category-watch">
+              <span class="category-name">Oyster</span>
+              <img src="images/sky/watchCollect3.png" alt="">
+              <div class="block blockColor4">
+
+              </div>
+            </div>
+
+          </div>
+          <div class="Category-group">
+            <div class="category-watch">
+              <span class="category-name">Date</span>
+              <img src="images/date/watchCollect2.png" alt="">
+              <div class="block blockColor2">
+
+              </div>
+
+            </div>
+            <div class="category-watch">
+              <span class="category-name">Oyster</span>
+              <img src="images/sky/watchCollect3.png" alt="">
+              <div class="block blockColor4">
+
+              </div>
+            </div>
+            <div class="category-watch">
+              <span class="category-name">Oyster</span>
+              <img src="images/oyster/watchCollect.png" alt="">
+              <div class="block blockColor1">
+
+              </div>
+
+            </div>
+            <div class="category-watch">
+              <span class="category-name">Sky</span>
+              <img src="images/date/watch3.png" alt="">
+              <div class="block blockColor3">
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="register-container">
+        <div class="card-form">
+          <figure class="signin-container front">
+            <div class="signin-field">
+              <span class="field_name">Username</span>
+              <input class="field-input" type="text" name="" value="">
+            </div>
+            <div class="signin-field">
+              <span class="field_name">Password</span>
+              <input class="field-input" type="text" name="" value="">
+            </div>
+
+
+            <input class="login cursor" type="submit" name="Sign In" value="Sign In">
+
+            <span class="gap">OR</span>
+            <div class="googleSign cursor">
+              <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M3.98918 13.1338L3.36262 15.932L1.07258 15.99C0.388195 14.4714 0 12.7339 0 10.8876C0 9.10222 0.362953 7.41857 1.00631 5.93607H1.0068L3.04559 6.38323L3.93869 8.80761C3.75177 9.45954 3.64989 10.1594 3.64989 10.8876C3.64996 11.678 3.76963 12.4352 3.98918 13.1338Z"
+                    fill="#FBBB00" />
+                  <path
+                    d="M17.8428 8.87624C17.9461 9.52755 18 10.2002 18 10.8876C18 11.6584 17.9323 12.4104 17.8032 13.1356C17.3651 15.6037 16.2203 17.7588 14.6344 19.2839L14.6339 19.2833L12.066 19.1266L11.7025 16.4124C12.7548 15.6741 13.5772 14.5188 14.0104 13.1356H9.19788V8.87624H14.0806H17.8428Z"
+                    fill="#518EF8" />
+                  <path
+                    d="M14.6338 19.2833L14.6343 19.2839C13.092 20.767 11.1327 21.6544 8.99993 21.6544C5.57251 21.6544 2.59263 19.3626 1.07251 15.99L3.98911 13.1339C4.74915 15.5605 6.70591 17.288 8.99993 17.288C9.98596 17.288 10.9097 16.9691 11.7024 16.4124L14.6338 19.2833Z"
+                    fill="#28B446" />
+                  <path
+                    d="M14.7446 2.59955L11.829 5.4551C11.0086 4.84165 10.0388 4.48727 8.99991 4.48727C6.65397 4.48727 4.66061 6.29394 3.93864 8.8076L1.00672 5.93607H1.00623C2.50409 2.48124 5.52155 0.120834 8.99991 0.120834C11.1836 0.120834 13.1859 1.0514 14.7446 2.59955Z"
+                    fill="#F14336" />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="18" height="21.5336" fill="white" transform="translate(0 0.120834)" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span class="googleText">Google Sign In</span>
+            </div>
+            <span class="fliptoCreateAccount cursor">Create Account</span>
+          </figure>
+          <figure class="signup-container back">
+            <div class="signin-field">
+              <span class="field_name">Username</span>
+              <input class="field-input" type="text" name="" value="">
+            </div>
+            <div class="signin-field">
+              <span class="field_name">Email</span>
+              <input class="field-input" type="text" name="" value="">
+            </div>
+            <div class="signin-field">
+              <span class="field_name">Password</span>
+              <input class="field-input" type="text" name="" value="">
+            </div>
+
+
+            <input class="login cursor" type="submit" name="Sign Up" value="Sign Up">
+
+            <span class="gap">OR</span>
+            <div class="googleSign cursor">
+              <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M3.98918 13.1338L3.36262 15.932L1.07258 15.99C0.388195 14.4714 0 12.7339 0 10.8876C0 9.10222 0.362953 7.41857 1.00631 5.93607H1.0068L3.04559 6.38323L3.93869 8.80761C3.75177 9.45954 3.64989 10.1594 3.64989 10.8876C3.64996 11.678 3.76963 12.4352 3.98918 13.1338Z"
+                    fill="#FBBB00" />
+                  <path
+                    d="M17.8428 8.87624C17.9461 9.52755 18 10.2002 18 10.8876C18 11.6584 17.9323 12.4104 17.8032 13.1356C17.3651 15.6037 16.2203 17.7588 14.6344 19.2839L14.6339 19.2833L12.066 19.1266L11.7025 16.4124C12.7548 15.6741 13.5772 14.5188 14.0104 13.1356H9.19788V8.87624H14.0806H17.8428Z"
+                    fill="#518EF8" />
+                  <path
+                    d="M14.6338 19.2833L14.6343 19.2839C13.092 20.767 11.1327 21.6544 8.99993 21.6544C5.57251 21.6544 2.59263 19.3626 1.07251 15.99L3.98911 13.1339C4.74915 15.5605 6.70591 17.288 8.99993 17.288C9.98596 17.288 10.9097 16.9691 11.7024 16.4124L14.6338 19.2833Z"
+                    fill="#28B446" />
+                  <path
+                    d="M14.7446 2.59955L11.829 5.4551C11.0086 4.84165 10.0388 4.48727 8.99991 4.48727C6.65397 4.48727 4.66061 6.29394 3.93864 8.8076L1.00672 5.93607H1.00623C2.50409 2.48124 5.52155 0.120834 8.99991 0.120834C11.1836 0.120834 13.1859 1.0514 14.7446 2.59955Z"
+                    fill="#F14336" />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="18" height="21.5336" fill="white" transform="translate(0 0.120834)" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span class="googleText">Google Sign Up</span>
+            </div>
+            <span class="fliptoCreateAccount1 cursor">Login</span>
+          </figure>
+
+        </div>
+
+      </div>
+      <div class="cartContainer">
+        <div class="cartContainerGroup">
+          <div class="cartLists">
+            <div class="cartListDisplay">
+              <div class="cartListTop">
+                <span class="cartListText">Your Shoping Cart</span>
+              </div>
+              <div class="cartListMiddle">
+                <div class="cart">
+                  <div class="productPhoto">
+                        <img  src="" alt="Watchpic">
+                  </div>
+                  <div class="productDetails">
+                    <span class="productName">Watch Name</span>
+                    <span class="productsubName">Sub Name</span>
+                  </div>
+                  <div class="productColor">
+                    <span class="productColorName">Color</span>
+                  </div>
+                  <div class="productQuantity ">
+                    <svg class="cursor minusProduct" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.26562 0.234375C3.25195 0.234375 0 3.48633 0 7.5C0 11.5137 3.25195 14.7656 7.26562 14.7656C11.2793 14.7656 14.5312 11.5137 14.5312 7.5C14.5312 3.48633 11.2793 0.234375 7.26562 0.234375ZM3.39844 8.67188C3.20508 8.67188 3.04688 8.51367 3.04688 8.32031V6.67969C3.04688 6.48633 3.20508 6.32812 3.39844 6.32812H11.1328C11.3262 6.32812 11.4844 6.48633 11.4844 6.67969V8.32031C11.4844 8.51367 11.3262 8.67188 11.1328 8.67188H3.39844Z"
+                        fill="#D7D5D5" />
+                    </svg>
+                    <span class="quantityCounter">1</span>
+                    <svg class="cursor addProduct" width="15" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.79688 0.234375C3.7832 0.234375 0.53125 3.48633 0.53125 7.5C0.53125 11.5137 3.7832 14.7656 7.79688 14.7656C11.8105 14.7656 15.0625 11.5137 15.0625 7.5C15.0625 3.48633 11.8105 0.234375 7.79688 0.234375ZM12.0156 8.32031C12.0156 8.51367 11.8574 8.67188 11.6641 8.67188H8.96875V11.3672C8.96875 11.5605 8.81055 11.7188 8.61719 11.7188H6.97656C6.7832 11.7188 6.625 11.5605 6.625 11.3672V8.67188H3.92969C3.73633 8.67188 3.57812 8.51367 3.57812 8.32031V6.67969C3.57812 6.48633 3.73633 6.32812 3.92969 6.32812H6.625V3.63281C6.625 3.43945 6.7832 3.28125 6.97656 3.28125H8.61719C8.81055 3.28125 8.96875 3.43945 8.96875 3.63281V6.32812H11.6641C11.8574 6.32812 12.0156 6.48633 12.0156 6.67969V8.32031Z"
+                        fill="#D7D5D5" />
+                    </svg>
+
+                  </div>
+                  <div class="productSaveorRemove">
+
+                    <div class="tooltip saveProduct">
+                      <div class="tooltipBox">
+                        <svg width="60" height="40" viewBox="0 0 30 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0 3.92857C0 1.75888 1.75888 0 3.92857 0H26.0714C28.2411 0 30 1.75888 30 3.92857V3.92857C30 6.09826 28.2411 7.85714 26.0714 7.85714H17.653C16.329 7.85714 15.1633 8.72966 14.7902 10V10V10C14.2841 8.70753 13.0378 7.85714 11.6497 7.85714H3.92857C1.75888 7.85714 0 6.09826 0 3.92857V3.92857Z"
+                            fill="#C4C4C4" />
+                        </svg>
+                        <span class="tooltipText">Save</span>
+                      </div>
+                    </div>
+
+                    <svg class="cursor saveHeart position-relative" width="15" height="15" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.02936 0.683764C7.95907 -0.358627 6.36731 -0.171131 5.3849 0.98733L5.00014 1.44045L4.61539 0.98733C3.63494 -0.171131 2.04122 -0.358627 0.970924 0.683764C-0.255615 1.88017 -0.320067 4.02745 0.777568 5.3243L4.55679 9.78404C4.80093 10.072 5.19741 10.072 5.44154 9.78404L9.22077 5.3243C10.3204 4.02745 10.2559 1.88017 9.02936 0.683764Z"
+                        fill="white" />
+                    </svg>
+                    <svg class="cursor saveHeart2 position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.02936 0.683764C7.95907 -0.358627 6.36731 -0.171131 5.3849 0.98733L5.00014 1.44045L4.61539 0.98733C3.63494 -0.171131 2.04122 -0.358627 0.970924 0.683764C-0.255615 1.88017 -0.320067 4.02745 0.777568 5.3243L4.55679 9.78404C4.80093 10.072 5.19741 10.072 5.44154 9.78404L9.22077 5.3243C10.3204 4.02745 10.2559 1.88017 9.02936 0.683764Z"
+                        fill="red" />
+                    </svg>
+
+
+
+                    <div class="tooltip removeProduct">
+                      <div class="tooltipBox">
+                        <svg width="70" height="40" viewBox="0 0 30 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0 3.92857C0 1.75888 1.75888 0 3.92857 0H26.0714C28.2411 0 30 1.75888 30 3.92857V3.92857C30 6.09826 28.2411 7.85714 26.0714 7.85714H17.653C16.329 7.85714 15.1633 8.72966 14.7902 10V10V10C14.2841 8.70753 13.0378 7.85714 11.6497 7.85714H3.92857C1.75888 7.85714 0 6.09826 0 3.92857V3.92857Z"
+                            fill="#C4C4C4" />
+                        </svg>
+                        <span class="tooltipText">Remove</span>
+                      </div>
+                    </div>
+                    <svg class="cursor removeCross" width="15" height="15" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.89545 5L9.73835 2.1571C10.0872 1.80824 10.0872 1.24261 9.73835 0.893466L9.10653 0.261648C8.75767 -0.0872159 8.19205 -0.0872159 7.8429 0.261648L5 3.10455L2.1571 0.261648C1.80824 -0.0872159 1.24261 -0.0872159 0.893466 0.261648L0.261648 0.893466C-0.0872159 1.24233 -0.0872159 1.80795 0.261648 2.1571L3.10455 5L0.261648 7.8429C-0.0872159 8.19176 -0.0872159 8.75739 0.261648 9.10653L0.893466 9.73835C1.24233 10.0872 1.80824 10.0872 2.1571 9.73835L5 6.89545L7.8429 9.73835C8.19176 10.0872 8.75767 10.0872 9.10653 9.73835L9.73835 9.10653C10.0872 8.75767 10.0872 8.19205 9.73835 7.8429L6.89545 5Z"
+                        fill="#D7D5D5" />
+                    </svg>
+
+
+                  </div>
+
+                </div>
+                <div class="cart">
+
+                  <div class="productPhoto">
+                        <img  src="" alt="Watchpic">
+                  </div>
+                  <div class="productDetails">
+                    <span class="productName">Watch Name</span>
+                    <span class="productsubName">Sub Name</span>
+                  </div>
+                  <div class="productColor">
+                    <span class="productColorName">Color</span>
+                  </div>
+                  <div class="productQuantity ">
+                    <svg class="cursor minusProduct" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.26562 0.234375C3.25195 0.234375 0 3.48633 0 7.5C0 11.5137 3.25195 14.7656 7.26562 14.7656C11.2793 14.7656 14.5312 11.5137 14.5312 7.5C14.5312 3.48633 11.2793 0.234375 7.26562 0.234375ZM3.39844 8.67188C3.20508 8.67188 3.04688 8.51367 3.04688 8.32031V6.67969C3.04688 6.48633 3.20508 6.32812 3.39844 6.32812H11.1328C11.3262 6.32812 11.4844 6.48633 11.4844 6.67969V8.32031C11.4844 8.51367 11.3262 8.67188 11.1328 8.67188H3.39844Z"
+                        fill="#D7D5D5" />
+                    </svg>
+                    <span class="quantityCounter">1</span>
+                    <svg class="cursor addProduct" width="15" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.79688 0.234375C3.7832 0.234375 0.53125 3.48633 0.53125 7.5C0.53125 11.5137 3.7832 14.7656 7.79688 14.7656C11.8105 14.7656 15.0625 11.5137 15.0625 7.5C15.0625 3.48633 11.8105 0.234375 7.79688 0.234375ZM12.0156 8.32031C12.0156 8.51367 11.8574 8.67188 11.6641 8.67188H8.96875V11.3672C8.96875 11.5605 8.81055 11.7188 8.61719 11.7188H6.97656C6.7832 11.7188 6.625 11.5605 6.625 11.3672V8.67188H3.92969C3.73633 8.67188 3.57812 8.51367 3.57812 8.32031V6.67969C3.57812 6.48633 3.73633 6.32812 3.92969 6.32812H6.625V3.63281C6.625 3.43945 6.7832 3.28125 6.97656 3.28125H8.61719C8.81055 3.28125 8.96875 3.43945 8.96875 3.63281V6.32812H11.6641C11.8574 6.32812 12.0156 6.48633 12.0156 6.67969V8.32031Z"
+                        fill="#D7D5D5" />
+                    </svg>
+
+                  </div>
+                  <div class="productSaveorRemove">
+
+                    <div class="tooltip saveProduct">
+                      <div class="tooltipBox">
+                        <svg width="60" height="40" viewBox="0 0 30 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0 3.92857C0 1.75888 1.75888 0 3.92857 0H26.0714C28.2411 0 30 1.75888 30 3.92857V3.92857C30 6.09826 28.2411 7.85714 26.0714 7.85714H17.653C16.329 7.85714 15.1633 8.72966 14.7902 10V10V10C14.2841 8.70753 13.0378 7.85714 11.6497 7.85714H3.92857C1.75888 7.85714 0 6.09826 0 3.92857V3.92857Z"
+                            fill="#C4C4C4" />
+                        </svg>
+                        <span class="tooltipText">Save</span>
+                      </div>
+                    </div>
+
+                    <svg class="cursor saveHeart" width="15" height="15" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.02936 0.683764C7.95907 -0.358627 6.36731 -0.171131 5.3849 0.98733L5.00014 1.44045L4.61539 0.98733C3.63494 -0.171131 2.04122 -0.358627 0.970924 0.683764C-0.255615 1.88017 -0.320067 4.02745 0.777568 5.3243L4.55679 9.78404C4.80093 10.072 5.19741 10.072 5.44154 9.78404L9.22077 5.3243C10.3204 4.02745 10.2559 1.88017 9.02936 0.683764Z"
+                        fill="white" />
+                    </svg>
+                    <svg class="cursor saveHeart2 position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.02936 0.683764C7.95907 -0.358627 6.36731 -0.171131 5.3849 0.98733L5.00014 1.44045L4.61539 0.98733C3.63494 -0.171131 2.04122 -0.358627 0.970924 0.683764C-0.255615 1.88017 -0.320067 4.02745 0.777568 5.3243L4.55679 9.78404C4.80093 10.072 5.19741 10.072 5.44154 9.78404L9.22077 5.3243C10.3204 4.02745 10.2559 1.88017 9.02936 0.683764Z"
+                        fill="red" />
+                    </svg>
+
+
+                    <div class="tooltip removeProduct">
+                      <div class="tooltipBox">
+                        <svg width="70" height="40" viewBox="0 0 30 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0 3.92857C0 1.75888 1.75888 0 3.92857 0H26.0714C28.2411 0 30 1.75888 30 3.92857V3.92857C30 6.09826 28.2411 7.85714 26.0714 7.85714H17.653C16.329 7.85714 15.1633 8.72966 14.7902 10V10V10C14.2841 8.70753 13.0378 7.85714 11.6497 7.85714H3.92857C1.75888 7.85714 0 6.09826 0 3.92857V3.92857Z"
+                            fill="#C4C4C4" />
+                        </svg>
+                        <span class="tooltipText">Remove</span>
+                      </div>
+                    </div>
+                    <svg class="cursor removeCross" width="15" height="15" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.89545 5L9.73835 2.1571C10.0872 1.80824 10.0872 1.24261 9.73835 0.893466L9.10653 0.261648C8.75767 -0.0872159 8.19205 -0.0872159 7.8429 0.261648L5 3.10455L2.1571 0.261648C1.80824 -0.0872159 1.24261 -0.0872159 0.893466 0.261648L0.261648 0.893466C-0.0872159 1.24233 -0.0872159 1.80795 0.261648 2.1571L3.10455 5L0.261648 7.8429C-0.0872159 8.19176 -0.0872159 8.75739 0.261648 9.10653L0.893466 9.73835C1.24233 10.0872 1.80824 10.0872 2.1571 9.73835L5 6.89545L7.8429 9.73835C8.19176 10.0872 8.75767 10.0872 9.10653 9.73835L9.73835 9.10653C10.0872 8.75767 10.0872 8.19205 9.73835 7.8429L6.89545 5Z"
+                        fill="#D7D5D5" />
+                    </svg>
+
+
+                  </div>
+
+                </div>
+                <div class="cart">
+
+                </div>
+
+              </div>
+              <div class="cartListBottom cursor">
+                <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.807612 11.0711 0.807612 10.4853 1.3934L0.93934 10.9393ZM38 10.5L2 10.5V13.5L38 13.5V10.5Z"
+                    fill="#A49B9B" />
+                </svg>
+
+                <span class="backtoHome">Back To Home</span>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="proccedBuy">
+            <div class="proccedBuyDisplay">
+              <div class="proccedBuytop">
+                <span class="proccedText">Procced to Buy</span>
+              </div>
+              <div class="proccedBuyMiddle">
+                <div class="payment creditCard">
+
+                  <div class="paymethond">
+                    <div class="checkBox">
+                      <div class="checkboxActive">
+
+                      </div>
+                    </div>
+                    <span class="paymentMethond">Credit Card</span>
+                  </div>
+                  <div class="cardForm">
+                    <div class="cardNumber">
+                      <input class="cardNumberField" type="text" name="" value="" placeholder="Card Number">
+                    </div>
+                    <div class="datesCvv">
+                      <input class="expiryDate" type="text" name="" value="" placeholder="         /">
+                      <input class="cvv" type="text" name="" value="" placeholder="CVV">
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+
+
+
+                <div class="payment DebitCard">
+                  <div class="paymethond">
+                    <div class="checkBox">
+                      <div class="checkboxActive checkBoxUnActive">
+
+                      </div>
+                    </div>
+                    <span class="paymentMethond">Debit Card</span>
+                  </div>
+                  <div class="cardForm">
+                    <div class="cardNumber">
+                      <input class="cardNumberField" type="text" name="" value="" placeholder="Card Number">
+                    </div>
+                    <div class="datesCvv">
+                      <input class="expiryDate" type="text" name="" value="" placeholder="         /">
+                      <input class="cvv" type="text" name="" value="" placeholder="CVV">
+                    </div>
+
+
+                  </div>
+                </div>
+
+
+                <div class="payment netbanking">
+                  <div class="paymethond">
+                    <div class="checkBox">
+                      <div class="checkboxActive checkBoxUnActive">
+
+                      </div>
+                    </div>
+                    <span class="paymentMethond">Net Banking</span>
+                  </div>
+                </div>
+
+
+                <div class="payment Paypal">
+                  <div class="paymethond">
+                    <div class="checkBox">
+                      <div class="checkboxActive checkBoxUnActive">
+
+                      </div>
+                    </div>
+                    <span class="paymentMethond ">Paypal</span>
+                  </div>
+                </div>
+
+
+                <div class="payment UPI">
+                  <div class="paymethond">
+                    <div class="checkBox">
+                      <div class="checkboxActive checkBoxUnActive">
+
+                      </div>
+                    </div>
+                    <span class="paymentMethond ">UPI</span>
+                  </div>
+                </div>
+
+                <div class="proccedBuyBottom">
+                  <div class="bottomContainer">
+                    <div class="listofProduct">
+
+                    </div>
+                    <div class="total">
+                      <span class="totalText">Total</span>
+                      <span class="totalPrize">$122</span>
+                    </div>
+                    <div class="BuyBtnInCart">
+                      <button class="buyButtom" type="button" name="button">Checkout</button>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="nav-container flex-container">
+        <nav class="nav-bar flex-container">
+
+          <div class="mobile-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobile-HamBurger">
+                <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="13" x2="15" y2="13" stroke="white" stroke-width="2"/>
+<line y1="1" x2="25" y2="1" stroke="white" stroke-width="2"/>
+<line y1="7" x2="20" y2="7" stroke="white" stroke-width="2"/>
+</svg>
+
+              </li>
+              <li><a class="logo font-color mobileLogo" href="#">Looper</a></li>
+              <li>
+                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.7531 7.06216L14.9842 2.18716C15.0731 1.83518 14.7758 1.5 14.3747 1.5H4.14604L3.90734 0.449766C3.84786 0.187992 3.59193 0 3.29503 0H0.625C0.279818 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.279818 1.5 0.625 1.5H2.44487L4.27424 9.54926C3.83659 9.77578 3.54167 10.2005 3.54167 10.6875C3.54167 11.4124 4.19458 12 5 12C5.80542 12 6.45833 11.4124 6.45833 10.6875C6.45833 10.3201 6.29044 9.98824 6.02021 9.75H11.4798C11.2096 9.98824 11.0417 10.3201 11.0417 10.6875C11.0417 11.4124 11.6946 12 12.5 12C13.3054 12 13.9583 11.4124 13.9583 10.6875C13.9583 10.1678 13.6227 9.71878 13.136 9.50613L13.2796 8.93716C13.3685 8.58518 13.0712 8.25 12.6702 8.25H5.68013L5.50969 7.5H13.1437C13.4355 7.5 13.6885 7.31827 13.7531 7.06216Z" fill="white"/>
+</svg>
+
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-left desktopViewLeft">
+            <ul class="nav-links flex-container">
+              <li class="link"> <a class="logo font-color" href="#">Looper</a></li>
+              <li class="link menuBtn flex-container cursor"><span class="icon margin-right">
+                  <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="1.53375" x2="12.9237" y2="1.53375" stroke="#FFFEFE" stroke-width="2" />
+                    <line y1="5.19952" x2="12.9237" y2="5.19952" stroke="#FFFEFE" stroke-width="2" />
+                    <line y1="8.86523" x2="12.9237" y2="8.86523" stroke="#FFFEFE" stroke-width="2" />
+                  </svg>
+
+                </span><a class="font-color menu-style " href="#">Menu</a></li>
+              <li class="link flex-container category-btn cursor"> <span class="icon margin-right">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.978177 3.75006H9.0188C9.57505 3.75006 9.85318 4.16998 9.45943 4.41608L5.44068 6.92975C5.19693 7.08209 4.80005 7.08209 4.5563 6.92975L0.537553 4.41608C0.143803 4.16998 0.421928 3.75006 0.978177 3.75006Z" fill="white" />
+                  </svg>
+
+                </span> <a class="font-color menu-style" href="#">Category</a> </li>
+            </ul>
+          </div>
+          <div class="nav-right desktopViewRight">
+            <ul class="nav-links flex-container">
+              <li class="searchField bgColor2 margin-right border-radius flex-container space-around">
+                <div class="searchContainer">
+
+                    <span class="searchIcon"><svg width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M11.0555 9.99824L8.8729 7.84127C8.77438 7.74391 8.64084 7.68982 8.50073 7.68982H8.14389C8.74811 6.92612 9.10714 5.96554 9.10714 4.92059C9.10714 2.43478 7.06898 0.420593 4.55357 0.420593C2.03816 0.420593 0 2.43478 0 4.92059C0 7.40641 2.03816 9.42059 4.55357 9.42059C5.61096 9.42059 6.58298 9.06579 7.35577 8.46867V8.82131C7.35577 8.95977 7.4105 9.09175 7.50901 9.1891L9.69166 11.3461C9.89745 11.5494 10.2302 11.5494 10.4338 11.3461L11.0534 10.7338C11.2591 10.5304 11.2591 10.2016 11.0555 9.99824ZM4.55357 7.68982C3.0058 7.68982 1.75137 6.45232 1.75137 4.92059C1.75137 3.39103 3.00361 2.15136 4.55357 2.15136C6.10135 2.15136 7.35577 3.38886 7.35577 4.92059C7.35577 6.45016 6.10354 7.68982 4.55357 7.68982Z"
+                            fill="white" />
+                          <circle cx="6" cy="6.42059" r="17.75" stroke="white" stroke-width="0.5" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="11.2088" height="11.0769" fill="white" transform="translate(0 0.420593)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                    <label class="input-text" for="">Search</label>
+
+
+                  <input class="input-field " type="text" name="" value="" placeholder="">
+                </div>
+
+                <div class="searchResult">
+                    <ul class="searchResultList">
+                      <li class="searchListName typeedResult">List</li>
+                        <!-- <li class="searchListName">List</li>
+                          <li class="searchListName">List</li> -->
+                    </ul>
+                </div>
+              </li>
+              <li class="cardBtnContainer cursor">
+
+                <span class="cartBtn" id="cart">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.7531 8.82771L14.9842 2.73396C15.0731 2.29397 14.7758 1.875 14.3747 1.875H4.14604L3.90734 0.562207C3.84786 0.23499 3.59193 0 3.29503 0H0.625C0.279818 0 0 0.314795 0 0.703125V1.17188C0 1.56021 0.279818 1.875 0.625 1.875H2.44487L4.27424 11.9366C3.83659 12.2197 3.54167 12.7506 3.54167 13.3594C3.54167 14.2655 4.19458 15 5 15C5.80542 15 6.45833 14.2655 6.45833 13.3594C6.45833 12.9002 6.29044 12.4853 6.02021 12.1875H11.4798C11.2096 12.4853 11.0417 12.9002 11.0417 13.3594C11.0417 14.2655 11.6946 15 12.5 15C13.3054 15 13.9583 14.2655 13.9583 13.3594C13.9583 12.7098 13.6227 12.1485 13.136 11.8827L13.2796 11.1715C13.3685 10.7315 13.0712 10.3125 12.6702 10.3125H5.68013L5.50969 9.375H13.1437C13.4355 9.375 13.6885 9.14783 13.7531 8.82771Z"
+                      fill="white" />
+                  </svg>
+
+                  Cart</span>
+                <div class="notification notificationOff">
+
+                </div>
+              </li>
+              <li><a class="signinBTn menu-style border-radius font-color" href="#"> Sign In</a> </li>
+            </ul>
+          </div>
+        </nav>
+
+
+      </div>
+
+
+
+      <div class="slide_track">
+        <div class="slide_left">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 39.375C9.29688 39.375 0.625 30.7031 0.625 20C0.625 9.29688 9.29688 0.625 20 0.625C30.7031 0.625 39.375 9.29688 39.375 20C39.375 30.7031 30.7031 39.375 20 39.375ZM22.2578 28.1562L16.3594 22.5H30.625C31.6641 22.5 32.5 21.6641 32.5 20.625V19.375C32.5 18.3359 31.6641 17.5 30.625 17.5H16.3594L22.2578 11.8438C23.0156 11.1172 23.0312 9.90625 22.2891 9.16406L21.4297 8.3125C20.6953 7.57813 19.5078 7.57813 18.7812 8.3125L8.41406 18.6719C7.67969 19.4062 7.67969 20.5937 8.41406 21.3203L18.7812 31.6875C19.5156 32.4219 20.7031 32.4219 21.4297 31.6875L22.2891 30.8359C23.0312 30.0938 23.0156 28.8828 22.2578 28.1562Z"
+              fill="white" />
+          </svg>
+        </div>
+        <div class="slide_right">
+          <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.375 0C30.0781 0 38.75 8.67188 38.75 19.375C38.75 30.0781 30.0781 38.75 19.375 38.75C8.67188 38.75 0 30.0781 0 19.375C0 8.67188 8.67188 0 19.375 0ZM17.1172 11.2188L23.0156 16.875H8.75C7.71094 16.875 6.875 17.7109 6.875 18.75V20C6.875 21.0391 7.71094 21.875 8.75 21.875H23.0156L17.1172 27.5312C16.3594 28.2578 16.3437 29.4688 17.0859 30.2109L17.9453 31.0625C18.6797 31.7969 19.8672 31.7969 20.5938 31.0625L30.9609 20.7031C31.6953 19.9688 31.6953 18.7813 30.9609 18.0547L20.5938 7.67969C19.8594 6.94531 18.6719 6.94531 17.9453 7.67969L17.0859 8.53125C16.3437 9.28125 16.3594 10.4922 17.1172 11.2188V11.2188Z"
+              fill="white" />
+          </svg>
+        </div>
+        <div class="slide-track1">
+
+          <ul class="slide_track_container">
+            <li class="slide_track_slide showWatch" >
+              <div class="card-watch oyster flex-container space-around bgColor2">
+                <div class="sidebar flex-container flex-column space-around ">
+                  <div class="title cover-width">
+                    <h3 class="watch-cat margin-bottom">oyster perpetual</h3>
+                    <h2 class="watch-name">sky-dweller</h2>
+                  </div>
+                  <div class="material cover-width ">
+                    <h3 class="feature font-color margin-bottom">Material</h3>
+                    <h4 class="feature-detail font-color2 watchColor">18 CT Yellow Gold</h4>
+
+                  </div>
+                  <div class="diameter cover-width">
+                    <h3 class="feature font-color margin-bottom">Diameter</h3>
+                    <h4 class="feature-detail font-color2">42 mm</h4>
+                  </div>
+                </div>
+                <div class="middlebar position-relative">
+                  <img class="imgProduct  position-absolute " id="imgProduct" alt="imgProduct" src="images/oyster/watch1.png">
+                </div>
+                <div class="sidebar flex-container flex-column space-around com-sidebar ">
+                  <div class="buy cover-width cursor buy2Cart " id="oysterWatch1">
+                    <h3 class="buyTag feature font-color margin-bottom "  id="buyTag">Buy <span class="margin-left">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M14.1429 5.625V4.5C14.1429 2.01867 11.8358 0 9 0C6.1642 0 3.85714 2.01867 3.85714 4.5V5.625H0V15.1875C0 16.7408 1.43908 18 3.21429 18H14.7857C16.5609 18 18 16.7408 18 15.1875V5.625H14.1429ZM6.42857 4.5C6.42857 3.25934 7.5821 2.25 9 2.25C10.4179 2.25 11.5714 3.25934 11.5714 4.5V5.625H6.42857V4.5ZM12.8571 8.71875C12.3246 8.71875 11.8929 8.341 11.8929 7.875C11.8929 7.409 12.3246 7.03125 12.8571 7.03125C13.3897 7.03125 13.8214 7.409 13.8214 7.875C13.8214 8.341 13.3897 8.71875 12.8571 8.71875ZM5.14286 8.71875C4.61029 8.71875 4.17857 8.341 4.17857 7.875C4.17857 7.409 4.61029 7.03125 5.14286 7.03125C5.67542 7.03125 6.10714 7.409 6.10714 7.875C6.10714 8.341 5.67542 8.71875 5.14286 8.71875Z"
+                            fill="white" />
+                        </svg>
+                      </span>
+                    </h3>
+                    <h4 class="price  feature-detail font-color2" id="price">225 $</h4>
+                  </div>
+
+                  <div class="Explore flex-container margin-right cursor">
+                    <a class="Explore_aTag" href="#OysterWatch">
+                      <h3 class="exploretag feature font-color margin-right " id="exploretag">Explore</h3>
+                    </a>
+                    <span>
+                      <svg class="exploreMobile" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M12.6137 7.59375H0.482143C0.215879 7.59375 0 7.78265 0 8.01563V9.98438C0 10.2174 0.215879 10.4063 0.482143 10.4063H12.6137V12.0255C12.6137 12.7772 13.6524 13.1537 14.2599 12.6222L17.7176 9.59664C18.0942 9.26712 18.0942 8.73289 17.7176 8.4034L14.2599 5.37789C13.6524 4.84636 12.6137 5.22282 12.6137 5.97453V7.59375V7.59375Z"
+                            fill="white" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="18" height="18" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+
+            <li class="slide_track_slide hideWatch">
+              <div class="card-watch oyster flex-container space-around bgColor3">
+                <div class="sidebar flex-container flex-column space-around ">
+                  <div class="title cover-width">
+                    <h3 class="watch-cat margin-bottom " style="color: #5B497C;">oyster perpetual</h3>
+                    <h2 class="watch-name fontColor3" style="color: #000000;">Datejust31</h2>
+                  </div>
+                  <div class="material cover-width ">
+                    <h3 class="feature margin-bottom fontColor3">Material</h3>
+                    <h4 class="feature-detail fontColor4">orstersteel and 18ct white gold</h4>
+
+                  </div>
+                  <div class="diameter cover-width">
+                    <h3 class="feature  margin-bottom fontColor3">Diameter</h3>
+                    <h4 class="feature-detail fontColor4">31 mm</h4>
+                  </div>
+                </div>
+                <div class="middlebar position-relative">
+                  <img class="imgProduct  position-absolute " id="imgProduct" alt="imgProduct" src="images/date/watch1.png">
+                </div>
+                <div class="sidebar flex-container flex-column space-around com-sidebar">
+                  <div class="buy cover-width buy2Cart">
+                    <h3 class="buyTag feature  margin-bottom fontColor3" id="buyTag">Buy <span class="margin-left">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M14.1429 5.625V4.5C14.1429 2.01867 11.8358 0 9 0C6.1642 0 3.85714 2.01867 3.85714 4.5V5.625H0V15.1875C0 16.7408 1.43908 18 3.21429 18H14.7857C16.5609 18 18 16.7408 18 15.1875V5.625H14.1429ZM6.42857 4.5C6.42857 3.25934 7.5821 2.25 9 2.25C10.4179 2.25 11.5714 3.25934 11.5714 4.5V5.625H6.42857V4.5ZM12.8571 8.71875C12.3246 8.71875 11.8929 8.341 11.8929 7.875C11.8929 7.409 12.3246 7.03125 12.8571 7.03125C13.3897 7.03125 13.8214 7.409 13.8214 7.875C13.8214 8.341 13.3897 8.71875 12.8571 8.71875ZM5.14286 8.71875C4.61029 8.71875 4.17857 8.341 4.17857 7.875C4.17857 7.409 4.61029 7.03125 5.14286 7.03125C5.67542 7.03125 6.10714 7.409 6.10714 7.875C6.10714 8.341 5.67542 8.71875 5.14286 8.71875Z"
+                            fill="#1A1A1A" />
+                        </svg>
+
+
+                      </span>
+                    </h3>
+                    <h4 class="price  feature-detail fontColor4" id="price">225 $</h4>
+                  </div>
+                  <div class="Explore flex-container margin-right cursor">
+                    <a class="Explore_aTag" href="#OysterWatch2">
+                      <h3 class="exploretag feature font-color3 margin-right " id="exploretag">Explore</h3>
+                    </a><span>
+                      <svg class="exploreMobile" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M12.6137 7.59375H0.482143C0.215879 7.59375 0 7.78265 0 8.01563V9.98438C0 10.2174 0.215879 10.4063 0.482143 10.4063H12.6137V12.0255C12.6137 12.7772 13.6524 13.1537 14.2599 12.6222L17.7176 9.59664C18.0942 9.26712 18.0942 8.73289 17.7176 8.4034L14.2599 5.37789C13.6524 4.84636 12.6137 5.22282 12.6137 5.97453V7.59375V7.59375Z"
+                            fill="#1A1A1A" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="18" height="18" fill="#1A1A1A" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                    </span>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+  </header>
+  <div class="oyster-watch bgColor overflow" id="OysterWatch">
+    <div class="oyster-about">
+
+      <div class="watch-about-container flex-container space-around">
+
+        <div class="watch-gallery oyster-watch-gallery flex-container flex-column space-around">
+
+          <div class="max-slider cursor magnifier-thumb-wrapper show">
+            <img class="max-sliderImg1 " id="thumb1" src="images/oyster/watchShow.png" alt="">
+          </div>
+
+          <div class="max-slider cursor magnifier-thumb-wrapper">
+            <img class="max-sliderImg1 " id="thumb2" src="images/oyster/watch1.png" alt="">
+          </div>
+
+          <div class="max-slider cursor magnifier-thumb-wrapper">
+            <img class="max-sliderImg1 " id="thumb3" src="images/oyster/watchCollect.png" alt="">
+          </div>
+
+
+
+          <div class="thumbnail-slide flex-container space-around">
+            <div class="thumbnail cursor frame">
+              <img class="thumbnail1 " src="images/oyster/watchShow.png" alt="">
+            </div>
+            <div class="thumbnail cursor">
+              <img class="thumbnail2" src="images/oyster/watch1.png" alt="">
+            </div>
+            <div class="thumbnail cursor">
+              <img class="thumbnail3" src="images/oyster/watchCollect.png" alt="">
+            </div>
+          </div>
+
+
+        </div>
+        <div class="watch-about oyster-watch-about flex-container flex-column ">
+          <span class="watch-detail margin-bottom detail-font font-color">The Oyster Perpetual
+            Sky-Dweller in 18 ct
+            yellow gold with a
+            bright black dial and an
+            Oysterflex bracelet.</span>
+          <span class="watch-decribe decribe-font font-color2">This distinctive watch is characterized by its second time
+            zone display on an off-centre disc on the dial.
+            Furthermore, its innovative system for setting the
+            functions, using the rotatable Ring Command bezel, is
+            unique to Rolex.</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="watch-feature">
+
+
+
+      <div class="watch-track flex-container">
+        <ul class="watch-list flex-container ">
+          <li class="watch-slide">
+
+            <img class="first_feature_img" src="images/oyster/feature1.png" alt="">
+
+          </li>
+          <li class="watch-slide">
+            <div class="watch-feature-card ">
+              <img src="images/oyster/feature2.jpg" alt="">
+            </div>
+          </li>
+          <li class="watch-slide">
+            <div class="watch-feature-card ">
+              <img src="images/oyster/feature3.jpg" alt="">
+            </div>
+          </li>
+          <li class="watch-slide">
+            <div class="watch-feature-card ">
+              <img src="images/oyster/feature4.png" alt="">
+            </div>
+          </li>
+        </ul>
+        <div class="left-arrow hidden">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 39.375C9.29688 39.375 0.625 30.7031 0.625 20C0.625 9.29688 9.29688 0.625 20 0.625C30.7031 0.625 39.375 9.29688 39.375 20C39.375 30.7031 30.7031 39.375 20 39.375ZM22.2578 28.1562L16.3594 22.5H30.625C31.6641 22.5 32.5 21.6641 32.5 20.625V19.375C32.5 18.3359 31.6641 17.5 30.625 17.5H16.3594L22.2578 11.8438C23.0156 11.1172 23.0312 9.90625 22.2891 9.16406L21.4297 8.3125C20.6953 7.57813 19.5078 7.57813 18.7812 8.3125L8.41406 18.6719C7.67969 19.4062 7.67969 20.5937 8.41406 21.3203L18.7812 31.6875C19.5156 32.4219 20.7031 32.4219 21.4297 31.6875L22.2891 30.8359C23.0312 30.0938 23.0156 28.8828 22.2578 28.1562Z"
+              fill="white" />
+          </svg>
+
+        </div>
+        <div class="right-arrow active">
+          <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.375 0C30.0781 0 38.75 8.67188 38.75 19.375C38.75 30.0781 30.0781 38.75 19.375 38.75C8.67188 38.75 0 30.0781 0 19.375C0 8.67188 8.67188 0 19.375 0ZM17.1172 11.2188L23.0156 16.875H8.75C7.71094 16.875 6.875 17.7109 6.875 18.75V20C6.875 21.0391 7.71094 21.875 8.75 21.875H23.0156L17.1172 27.5312C16.3594 28.2578 16.3437 29.4688 17.0859 30.2109L17.9453 31.0625C18.6797 31.7969 19.8672 31.7969 20.5938 31.0625L30.9609 20.7031C31.6953 19.9688 31.6953 18.7813 30.9609 18.0547L20.5938 7.67969C19.8594 6.94531 18.6719 6.94531 17.9453 7.67969L17.0859 8.53125C16.3437 9.28125 16.3594 10.4922 17.1172 11.2188V11.2188Z"
+              fill="white" />
+          </svg>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="feature1 flex-container flex-column space-around overflow">
+      <div class="feature1-detail flex-container flex-column position-absolute">
+
+        <span class="feature1-title detail-font font-color margin-bottom featurewidth">Bright black dial A striking characteristic</span>
+        <span class="feature1-describe describe-font font-color2 mobile-describe">A fixed inverted red triangle on the dial points to the
+          chosen reference time – the time at home or at the
+          traveller’s usual workplace – on the off-centre 24-hour
+          disc. At a glance, this 24-hour display clearly distinguishes
+          daytime hours from night-time hours in the other time
+          zone.</span>
+
+      </div>
+      <div class="feature1-image position-absolute">
+        <img class="cover" src="images/oyster/watchScreen.png" alt="">
+      </div>
+
+    </div>
+    <div class="feature2 bgColor2 flex-container">
+      <div class="feature-container flex-container space-around ">
+        <div class="feature-img position-relative">
+          <img class="ring feature-img-size position-absolute" src="images/oyster/feature1.png" alt="">
+        </div>
+        <div class="feature-text flex-container flex-column">
+          <span class="detail-font font-color margin-bottom">The Fluted Bezel
+            A Rolex signature</span>
+          <span class="describe-font font-color2">The Rolex fluted bezel is a mark of distinction. Originally,
+            the fluting of the Oyster bezel had a functional purpose: it
+            served to screw the bezel onto the case helping to ensure
+            the waterproofness of the watch. It was therefore identical
+            to the fluting on the case back, which was also screwed
+            onto the case for waterproofness, using specific Rolex
+            tools. Over time, the fluting became an aesthetic element,
+            a genuine Rolex signature feature. Today the fluted bezel
+            is a mark of distinction, always in gold.</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="feature3 bgColor flex-container">
+      <div class="feature-container flex-container space-around">
+        <div class="feature-text flex-container flex-column">
+          <span class="detail-font font-color margin-bottom fontBottom">18 ct yellow gold Commitment to
+            excellence</span>
+          <span class="describe-font font-color2 ">By operating its own exclusive foundry, Rolex has the
+            unrivalled ability to cast the highest quality 18 ct gold
+            alloys. According to the proportion of silver, copper,
+            platinum or palladium added, different types of 18 ct
+            gold are obtained: yellow, pink or white. They are made
+            with only the purest metals and meticulously inspected in
+            an in-house laboratory with state-of-the-art equipment,
+            before the gold is formed and shaped with the same
+            painstaking attention to quality. Rolex's commitment to
+            excellence begins at the source.</span>
+        </div>
+        <div class="feature-img imgTop">
+          <img class="cover imgTopimg" src="images/oyster/feature2.jpg" alt="">
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="feature4 bgColor2 flex-container position-relative ">
+      <div class="feature-track flex-container position-relative ">
+        <div class="feature-container flex-container space-around mobileViewfeature">
+          <div class="track-img">
+            <img class="cover" src="images/oyster/feature4.png" alt="">
+          </div>
+          <div class="feature-text flex-container flex-column">
+            <span class="detail-font font-color margin-bottom font-color3 feature4mobile">The Oysterflex Bracelet
+              Highly resistant and
+              durable</span>
+            <span class="describe-font font-color2">The Sky-Dweller’s new Oysterflex bracelet, developed and
+              patented by Rolex, offers a sporty alternative to metal
+              bracelets. The bracelet attaches to the watch case and the
+              Oysterclasp by a flexible titanium and nickel alloy metal
+              blade. The blade is overmoulded with high-performance
+              black elastomer which is particularly resistant to
+              environmental effects, very durable and perfectly inert for
+              the wearer of the watch. </span>
+
+            <div class="nextBtn flex-container <next></next> cursor">
+              <span class="nextSlide ">Cyclop Lens</span><span class="nextIcon">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="18" cy="18" r="17.5" stroke="black" />
+                  <path
+                    d="M20.5114 16.3283H10.4018C10.1799 16.3283 10 16.4857 10 16.6799V18.3205C10 18.5147 10.1799 18.6721 10.4018 18.6721H20.5114V20.0214C20.5114 20.6479 21.377 20.9616 21.8832 20.5186L24.7647 17.9974C25.0785 17.7228 25.0785 17.2776 24.7647 17.003L21.8832 14.4818C21.377 14.0388 20.5114 14.3525 20.5114 14.979V16.3283Z"
+                    fill="black" />
+                </svg>
+
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="feature5 feature-track flex-container position-absolute ">
+        <div class="feature-container flex-container space-around mobileViewfeature">
+          <div class="track-img">
+            <img class="cover" src="images/oyster/feature3.jpg" alt="">
+          </div>
+          <div class="feature-text flex-container flex-column">
+            <span class="detail-font font-coloar margin-bottom font-color3 feature4mobile">The Cyclops lens
+              A magnifying lens</span>
+            <span class="describe-font font-color2">The Cyclops lens is one of the most distinctive Rolex features, and one of the most recognizable. Named after
+              the one-eyed giant of Greek mythology, the Cyclops lens
+              magnifies the watch’s emblematic date display two and a
+              half times for easy reading. Behind the Cyclops, as with
+              every feature of a Rolex timepiece, lies a history of
+              invention, research and development, and the endless
+              search for perfection. </span>
+            <div class="nextBtn flex-container previous cursor">
+              <span class="nextIcon">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle r="17.5" transform="matrix(-1 0 0 1 18 18)" stroke="black" />
+                  <path
+                    d="M15.4886 16.3283H25.5982C25.8201 16.3283 26 16.4857 26 16.6799V18.3205C26 18.5147 25.8201 18.6721 25.5982 18.6721H15.4886V20.0214C15.4886 20.6479 14.623 20.9616 14.1168 20.5186L11.2353 17.9974C10.9215 17.7228 10.9215 17.2776 11.2353 17.003L14.1168 14.4818C14.623 14.0388 15.4886 14.3525 15.4886 14.979V16.3283Z"
+                    fill="black" />
+                </svg>
+
+
+              </span>
+              <span class="nextSlide">Bracelet</span>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="oyster-watch bgColor overflow" id="OysterWatch2">
+    <div class="oyster-about watchBackGround">
+
+      <div class="watch-about-container flex-container space-around">
+
+        <div class="watch-gallery oyster-watch-gallery flex-container flex-column space-around">
+
+          <div class="max-slider cursor watch2Thumbnail magnifier-thumb-wrapper show">
+            <img class="max-sliderImg1 " id="thumb4" src="images/date/watch2.png" alt="">
+          </div>
+
+          <div class="max-slider cursor watch2Thumbnail magnifier-thumb-wrapper">
+            <img class="max-sliderImg1 " id="thumb5" src="images/date/watch1.png" alt="">
+          </div>
+
+          <div class="max-slider cursor watch2Thumbnail magnifier-thumb-wrapper">
+            <img class="max-sliderImg1 " id="thumb6" src="images/date/watch3.png" alt="">
+          </div>
+
+
+
+          <div class="thumbnail-slide flex-container space-around ">
+            <div class="thumbnail cursor watch2Thumbnail frame">
+              <img class="thumbnail1 " src="images/date/watch2.png" alt="">
+            </div>
+            <div class="thumbnail cursor watch2Thumbnail">
+              <img class="thumbnail2" src="images/date/watch1.png" alt="">
+            </div>
+            <div class="thumbnail cursor watch2Thumbnail">
+              <img class="thumbnail3" src="images/date/watch3.png" alt="">
+            </div>
+          </div>
+
+
+        </div>
+        <div class="watch-about oyster-watch-about flex-container flex-column ">
+          <span class="watch-detail margin-bottom detail-font watch2FontColor">Datejust 31 in Oystersteel
+            and white gold features
+            an aubergine, diamond
+            set dial and an Oyster
+            bracelet.</span>
+          <span class="watch-decribe decribe-font watch2FontColor2">Its dial features Large VI set with diamonds. The light
+            reflections on the case sides and lugs highlight the elegant
+            profile of the 31 mm Oyster case, which is fitted with a
+            diamond-set bezel. </span>
+        </div>
+      </div>
+
+    </div>
+    <div class="watch-feature watchBackGround">
+
+
+
+      <div class="watch-track flex-container">
+        <ul class="watch-list flex-container ">
+          <li class="watch-slide">
+
+            <img class="first_feature_img" src="images/date/ring.png" alt="">
+
+          </li>
+          <li class="watch-slide">
+            <div class="watch-feature-card watch2Thumbnail">
+              <img src="images/date/metal.jpg" alt="">
+            </div>
+          </li>
+          <li class="watch-slide">
+            <div class="watch-feature-card watch2Thumbnail">
+              <img src="images/date/glass.png" alt="">
+            </div>
+          </li>
+          <li class="watch-slide">
+            <div class="watch-feature-card watch2Thumbnail">
+              <img src="images/date/band.png" alt="">
+            </div>
+          </li>
+        </ul>
+        <div class="left-arrow hidden">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 39.375C9.29688 39.375 0.625 30.7031 0.625 20C0.625 9.29688 9.29688 0.625 20 0.625C30.7031 0.625 39.375 9.29688 39.375 20C39.375 30.7031 30.7031 39.375 20 39.375ZM22.2578 28.1562L16.3594 22.5H30.625C31.6641 22.5 32.5 21.6641 32.5 20.625V19.375C32.5 18.3359 31.6641 17.5 30.625 17.5H16.3594L22.2578 11.8438C23.0156 11.1172 23.0312 9.90625 22.2891 9.16406L21.4297 8.3125C20.6953 7.57813 19.5078 7.57813 18.7812 8.3125L8.41406 18.6719C7.67969 19.4062 7.67969 20.5937 8.41406 21.3203L18.7812 31.6875C19.5156 32.4219 20.7031 32.4219 21.4297 31.6875L22.2891 30.8359C23.0312 30.0938 23.0156 28.8828 22.2578 28.1562Z"
+              fill="white" />
+          </svg>
+
+        </div>
+        <div class="right-arrow active">
+          <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.375 0C30.0781 0 38.75 8.67188 38.75 19.375C38.75 30.0781 30.0781 38.75 19.375 38.75C8.67188 38.75 0 30.0781 0 19.375C0 8.67188 8.67188 0 19.375 0ZM17.1172 11.2188L23.0156 16.875H8.75C7.71094 16.875 6.875 17.7109 6.875 18.75V20C6.875 21.0391 7.71094 21.875 8.75 21.875H23.0156L17.1172 27.5312C16.3594 28.2578 16.3437 29.4688 17.0859 30.2109L17.9453 31.0625C18.6797 31.7969 19.8672 31.7969 20.5938 31.0625L30.9609 20.7031C31.6953 19.9688 31.6953 18.7813 30.9609 18.0547L20.5938 7.67969C19.8594 6.94531 18.6719 6.94531 17.9453 7.67969L17.0859 8.53125C16.3437 9.28125 16.3594 10.4922 17.1172 11.2188V11.2188Z"
+              fill="white" />
+          </svg>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="feature1 flex-container flex-column space-around overflow feature1watch2Color">
+      <div class="feature1-imagewatch2 position-absolute ">
+        <img class="cover" src="images/date/Screen.png" alt="">
+      </div>
+      <div class="feature1-detailwatch2 flex-container flex-column position-absolute">
+
+        <span class="feature1-title detail-font watch2FontColor margin-bottom">Aubergine Dial A watchmaking technique</span>
+        <span class="feature1-describe describe-font watch2FontColor2">The sunray finish creates delicate light reflections on
+          many dials in the Oyster Perpetual collection. It is obtained
+          using masterful brushing techniques that create grooves
+          running outwards from the centre of the dial.</span>
+
+      </div>
+
+
+    </div>
+    <div class="feature2 watchBackGround flex-container">
+      <div class="feature-container flex-container space-around ">
+        <div class="feature-img position-relative watch2TilesBack">
+          <img class="ring feature-img-size position-absolute" src="images/date/ring.png" alt="">
+        </div>
+        <div class="feature-text flex-container flex-column">
+          <span class="detail-font watch2FontColor margin-bottom">The Fluted Bezel
+            A Rolex signature</span>
+          <span class="describe-font watch2FontColor2">The Rolex fluted bezel is a mark of distinction. Originally,
+            the fluting of the Oyster bezel had a functional purpose: it
+            served to screw the bezel onto the case helping to ensure
+            the waterproofness of the watch. It was therefore identical
+            to the fluting on the case back, which was also screwed
+            onto the case for waterproofness, using specific Rolex
+            tools. Over time, the fluting became an aesthetic element,
+            a genuine Rolex signature feature. Today the fluted bezel
+            is a mark of distinction, always in gold.</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="feature3 watch2BackGround2 flex-container">
+      <div class="feature-container flex-container space-around">
+        <div class="feature-text flex-container flex-column">
+          <span class="detail-font font-color margin-bottom">White Rolesor
+            A meeting of two metals</span>
+          <span class="describe-font  watch2FontColor">Gold is coveted for its lustre and nobility. Steel reinforces
+            strength and reliability. Together, they harmoniously
+            combine the best of their properties. A true Rolex
+            signature, Rolesor has featured on Rolex models since the
+            early 1930s, and was trademarked as a name in 1933. It is
+            one of the prominent pillars of the Oyster collection.</span>
+        </div>
+        <div class="feature-img watch2TilesBack">
+          <img class="cover" src="images/date/metal.jpg" alt="">
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="feature4 watchBackGround flex-container position-relative ">
+      <div class="feature-track flex-container position-relative watch2trackColor">
+        <div class="feature-container flex-container space-around">
+          <div class="track-img">
+            <img class="cover" src="images/date/band.png" alt="">
+          </div>
+          <div class="feature-text flex-container flex-column">
+            <span class="detail-font font-color margin-bottom font-color">The Oyster bracelet
+              Alchemy of form and
+              function</span>
+            <span class="describe-font font-color3">The Oyster bracelet is a perfect alchemy of form and
+              function, aesthetics and technology, designed to be both
+              robust and comfortable. It is equipped with an Oysterclasp
+              and the Easylink comfort extension link, also exclusive to
+              Rolex. This ingenious system allows the wearer to increase
+              the bracelet length by approximately 5 mm, providing
+              additional comfort in any circumstance. </span>
+
+            <div class="nextBtn flex-container <next></next> cursor">
+              <span class="nextSlide ">Cyclop Lens</span><span class="nextIcon">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="18" cy="18" r="17.5" stroke="black" />
+                  <path
+                    d="M20.5114 16.3283H10.4018C10.1799 16.3283 10 16.4857 10 16.6799V18.3205C10 18.5147 10.1799 18.6721 10.4018 18.6721H20.5114V20.0214C20.5114 20.6479 21.377 20.9616 21.8832 20.5186L24.7647 17.9974C25.0785 17.7228 25.0785 17.2776 24.7647 17.003L21.8832 14.4818C21.377 14.0388 20.5114 14.3525 20.5114 14.979V16.3283Z"
+                    fill="black" />
+                </svg>
+
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="feature5   feature-track watchBackGround  flex-container position-absolute ">
+        <div class="feature-container watch2trackColor flex-container space-around ">
+          <div class="track-img">
+            <img class="cover" src="images/date/glass.png" alt="">
+          </div>
+          <div class="feature-text flex-container flex-column">
+            <span class="detail-font font-coloar margin-bottom font-color">The Cyclops lens
+              A magnifying lens</span>
+            <span class="describe-font font-color3">The Cyclops lens is one of the most distinctive Rolex features, and one of the most recognizable. Named after
+              the one-eyed giant of Greek mythology, the Cyclops lens
+              magnifies the watch’s emblematic date display two and a
+              half times for easy reading. Behind the Cyclops, as with
+              every feature of a Rolex timepiece, lies a history of
+              invention, research and development, and the endless
+              search for perfection. </span>
+            <div class="nextBtn flex-container previous cursor">
+              <span class="nextIcon">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle r="17.5" transform="matrix(-1 0 0 1 18 18)" stroke="black" />
+                  <path
+                    d="M15.4886 16.3283H25.5982C25.8201 16.3283 26 16.4857 26 16.6799V18.3205C26 18.5147 25.8201 18.6721 25.5982 18.6721H15.4886V20.0214C15.4886 20.6479 14.623 20.9616 14.1168 20.5186L11.2353 17.9974C10.9215 17.7228 10.9215 17.2776 11.2353 17.003L14.1168 14.4818C14.623 14.0388 15.4886 14.3525 15.4886 14.979V16.3283Z"
+                    fill="black" />
+                </svg>
+
+
+              </span>
+              <span class="nextSlide">Bracelet</span>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="about bgColor position-relative flex-container" id="about">
+    <div class="bgImg position-absolute">
+      <img class="bgImgtag" src="images/aboutwatch.png" alt="">
+    </div>
+    <div class="about-container flex-container flex-column space-around">
+      <span class="about-width about-detail font-color">Looper is presenting the latest creations brought to life by its unique watchmaking expertise.</span>
+      <span class="about-width about-describe font-color2">These timepieces take us from the deepest caves to the highest mountain peaks, from the outer reaches of the solar system to isolated polar regions and from ultra-precise technology to
+        exacting artisanal craftsmanship. They are watches that invite you on an adventure – be it geographical, technical or aesthetic.</span>
+    </div>
+
+  </div>
+
+  <div class="collections flex-container flex-column space-around position-relative" id="collection">
+    <div class="collection-container flex-container flex-column">
+      <span class="collection-width collection-detail font-color">Masterpieces of Looper</span>
+      <span class="collection-width collection-describe font-color2">Looper watches are crafted with scrupulous attention to detail.</span>
+
+
+    </div>
+    <div class="feature-watch-track ">
+
+      <ul class="feature-watch-list flex-container ">
+
+        <li class="feature-slide">
+
+          <div class="watch-show ">
+            <img class="cover  " src="images/oyster/watchCollect.png" alt="">
+          </div>
+
+        </li>
+        <li class="feature-slide">
+          <div class="watch-show  ">
+            <img class="cover  " src="images/date/watchCollect2.png" alt="">
+          </div>
+        </li>
+        <li class="feature-slide">
+          <div class="watch-show  ">
+            <img class="cover  " src="images/date/watch3.png" alt="">
+          </div>
+        </li>
+        <li class="feature-slide">
+          <div class="watch-show  ">
+            <img class="cover  " src="images/sky/watchCollect3.png" alt="">
+          </div>
+        </li>
+        <li class="feature-slide">
+          <div class="watch-show  ">
+            <img class="cover  " src="images/oyster/watchCollect.png" alt="">
+          </div>
+        </li>
+        <li class="feature-slide">
+          <div class="watch-show  ">
+            <img class="cover  " src="images/date/watchCollect2.png" alt="">
+          </div>
+        </li>
+        <li class="feature-slide">
+          <div class="watch-show  ">
+            <img class="cover  " src="images/date/watch3.png" alt="">
+          </div>
+        </li>
+        <li class="feature-slide">
+          <div class="watch-show  ">
+            <img class="cover  " src="images/oyster/watchCollect.png" alt="">
+          </div>
+        </li>
+        <li class="feature-slide">
+          <div class="watch-show  ">
+            <img class="cover  " src="images/date/watchCollect2.png" alt="">
+          </div>
+        </li>
+        <li class="feature-slide">
+          <div class="watch-show  ">
+            <img class="cover  " src="images/date/watch3.png" alt="">
+          </div>
+        </li>
+      </ul>
+
+
+
+    </div>
+    <div class="feature-arrow-right">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M20 39.375C9.29688 39.375 0.625 30.7031 0.625 20C0.625 9.29688 9.29688 0.625 20 0.625C30.7031 0.625 39.375 9.29688 39.375 20C39.375 30.7031 30.7031 39.375 20 39.375ZM22.2578 28.1562L16.3594 22.5H30.625C31.6641 22.5 32.5 21.6641 32.5 20.625V19.375C32.5 18.3359 31.6641 17.5 30.625 17.5H16.3594L22.2578 11.8438C23.0156 11.1172 23.0312 9.90625 22.2891 9.16406L21.4297 8.3125C20.6953 7.57813 19.5078 7.57813 18.7812 8.3125L8.41406 18.6719C7.67969 19.4062 7.67969 20.5937 8.41406 21.3203L18.7812 31.6875C19.5156 32.4219 20.7031 32.4219 21.4297 31.6875L22.2891 30.8359C23.0312 30.0938 23.0156 28.8828 22.2578 28.1562Z"
+          fill="white" />
+      </svg>
+
+    </div>
+
+    <div class="feature-arrow-left">
+      <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M19.375 0C30.0781 0 38.75 8.67188 38.75 19.375C38.75 30.0781 30.0781 38.75 19.375 38.75C8.67188 38.75 0 30.0781 0 19.375C0 8.67188 8.67188 0 19.375 0ZM17.1172 11.2188L23.0156 16.875H8.75C7.71094 16.875 6.875 17.7109 6.875 18.75V20C6.875 21.0391 7.71094 21.875 8.75 21.875H23.0156L17.1172 27.5312C16.3594 28.2578 16.3437 29.4688 17.0859 30.2109L17.9453 31.0625C18.6797 31.7969 19.8672 31.7969 20.5938 31.0625L30.9609 20.7031C31.6953 19.9688 31.6953 18.7813 30.9609 18.0547L20.5938 7.67969C19.8594 6.94531 18.6719 6.94531 17.9453 7.67969L17.0859 8.53125C16.3437 9.28125 16.3594 10.4922 17.1172 11.2188V11.2188Z"
+          fill="white" />
+      </svg>
+
+    </div>
+
+
+  </div>
+
+  <div class="locator position-relative flex-container " id="locator">
+    <div class="bgImage position-absolute">
+      <img class="bgImagetag" src="images/pexels-mister-mister-380782.jpg" alt="">
+    </div>
+    <div class="locator-container flex-container flex-column ">
+      <span class="tagline font-color margin-bottom">Where to Buy Looper</span>
+      <span class="sub-tagline font-color2 margin-bottom">Find Looper Offcial Retailer Shop</span>
+      <span class="locateBtn border-radius flex-container margin-bottom"> <a class="font-color" href="#">Locate</a> </span>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js">
+
+  </script>
+  <script type="text/javascript">
+    const splide = document.querySelectorAll('.splide');
+    document.addEventListener('DOMContentLoaded', function() {
+      new Splide(splide[0]).mount();
+      new Splide(splide[1], {
+        perPage: 3,
+        rewind: true,
+        autoplay: true,
+        hidden: true,
+
+      }).mount();
+    })
+  </script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="js/Event.js"></script>
+  <script type="text/javascript" src="js/Magnifier.js"></script>
+  <script type="text/javascript" src="js/slider.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/slide-watch.js"></script>
+  <script type="text/javascript" src="js/showCase.js"></script>
+  <script type="text/javascript" src="js/magnifierImage.js"></script>
+  <script type="text/javascript" src="js/flipCard.js"></script>
+  <script type="text/javascript" src="js/headerSlide.js"></script>
+  <script type="text/javascript" src="js/cart.js"></script>
+  <script type="text/javascript" src="js/search.js"></script>
+
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script> -->
+</body>
+
+</html>
